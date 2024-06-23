@@ -12,6 +12,7 @@ import tensorflow
 print (tensorflow.__version__)
 
 st.header("Welcome to the Generative Playground")
+st.write("This is an autoregressor model on cifar10 data set, with 50 epochs and 16 batch size trained only. RTX GPU is used to train the model.")
 
 from tensorflow.keras.datasets import mnist,cifar10
 
@@ -174,7 +175,7 @@ for row in tqdm_notebook(range(rows)):
             pixels[:, row, col, channel] = tensorflow.math.ceil(
               probs - tensorflow.random.uniform(probs.shape)
             )
-    my_bar.progress(row)
+    my_bar.progress(row+1)
 time.sleep(1)
 
 counter = 0
