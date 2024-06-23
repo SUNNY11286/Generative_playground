@@ -142,7 +142,7 @@ pixel_cnn.load_weights(checkpoint_path)
 # # Display Results 81 images
 
 # %%
-from IPython.display import Image, display
+#from IPython.display import Image, display
 from tqdm import tqdm_notebook
 
 
