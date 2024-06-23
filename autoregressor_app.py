@@ -163,7 +163,7 @@ my_bar = st.progress(0)
 
 
 # Iterate over the pixels because generation has to be done sequentially pixel by pixel.
-for row in tqdm_notebook(range(rows)):
+for row in range(rows):
     for col in range(cols):
         for channel in range(channels):
             time.sleep(0.01)
